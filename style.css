@@ -1,23 +1,27 @@
 .logo {
     height: 60px;
     width: 120px;
-    background-color: black;
 }
 
-.fbLogo {
+.fblogo {
     height: 30px;
     width: 30px;
+    float: right;
 }
 
-.insLogo {
+.inslogo {
     height: 30px;
     width: 30px;
+    float: right;
 }
 
-h4 {
+.header{
     background-color: black;
     height: 60px;
     width: 100%;
     color: white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    top: 10px;
 }
