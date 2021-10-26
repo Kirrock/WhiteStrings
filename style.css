@@ -1,0 +1,23 @@
+.logo {
+    height: 60px;
+    width: 120px;
+    background-color: black;
+}
+
+.fbLogo {
+    height: 30px;
+    width: 30px;
+}
+
+.insLogo {
+    height: 30px;
+    width: 30px;
+}
+
+h4 {
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
