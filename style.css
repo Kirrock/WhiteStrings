@@ -1,27 +1,43 @@
+body {
+    background: darkgray;
+    margin: 0;
+    padding: 0;
+  }
+
 .logo {
     height: 60px;
     width: 120px;
+    z-index: 10;
 }
 
 .fblogo {
     height: 30px;
     width: 30px;
-    float: right;
+    z-index: 10;
+    position: absolute;
+    top: 15px;
+    left: 1260px;
 }
 
 .inslogo {
     height: 30px;
     width: 30px;
-    float: right;
+    z-index: 10;
+    position: absolute;
+    top: 15px;
+    left: 1300px;
 }
 
-.header{
+.cabecera{
     background-color: black;
+    color: white;
+    position: fixed;
     height: 60px;
     width: 100%;
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-    top: 10px;
+    z-index: 10;
+}
+
+.banner {
+    height: 500px;
+    width: 100%;
 }
