@@ -40,18 +40,74 @@ body {
 .cabecera{
     background-color: black;
     color: white;
-    position: fixed;
     height: 60px;
     width: 100%;
     z-index: 10;
 }
-
-.banner {
-    height: 300px;
-    width: 35%;
+/*-----------Area scrolleable-----------*/
+a {
+    display: inline;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+nav, scroll-container {
+    text-align: center;
+    font-size: 5em;
+}
+nav {
+    position: absolute;
+    width: 339px;
+    top: 0px;
+    left: 515px;
+}
+scroll-container {
+    display: block;
+    height: 537px;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 537px;
+    font-size: 10em;
+}
+/*-------Imagen de los miembros-------*/
+.mainDisplay {
+    position: left;
+    height: 537px;
+    width: 700px;
+}
+.Display {
+    position: inherit;
+    height: 537px;
+    width:220px;
+    left: 0px;
+}
+/*------Escrito sobre los miembros-----*/
+.ecriv {
+    height: 537px;
+    width: 1146px;
+}
+h1 {
+    font-size: 30px;
+}
+p {
+    font-size: 10px;
+}
+/*-------------Pie de pagina------------*/
+footer {
+    background-color: black;
+    color: blanchedalmond;
+    height: 60px;
+    margin: 0;
 }
 
-.cover {
-    height: 300px;
-    width: 35%;
+.Contact {
+    left: 10px;
+    height: 40px;
+    width: 40px;
 }
