@@ -1,9 +1,36 @@
-body {
-    background: darkgray;
+/*-----------------Fonts-----------------*/
+@font-face {
+    font-family: Angkanya;
+    src: url(AngkanyaSebelas.ttf);
+}
+
+@font-face {
+    font-family: Sillene;
+    src: url(Sillene.ttf);
+}
+
+@font-face {
+    font-family: Dalisha;
+    src: url(Dalisha.ttf);
+}
+/*----------------White Strings------------------*/
+.WSQ {
+    font-family: Dalisha;
+}
+
+.frase1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+body, html {
+    height: 100%;
+    background: #dbceb0;
     margin: 0;
     padding: 0;
   }
-
+/*---------------Logos--------------*/
 .logo {
     height: 60px;
     width: 120px;
@@ -11,32 +38,32 @@ body {
 }
 
 .ytlogo {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     z-index: 10;
     position: absolute;
-    top: 15px;
-    left: 1220px;
+    top: 12px;
+    right: 125px;
 }
 
 .fblogo {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     z-index: 10;
     position: absolute;
-    top: 15px;
-    left: 1260px;
+    top: 5px;
+    right: 80px;
 }
 
 .inslogo {
     height: 30px;
-    width: 30px;
+    width: 40px;
     z-index: 10;
     position: absolute;
     top: 15px;
-    left: 1300px;
+    right: 50px;
 }
-
+/*---------------------------------------*/
 .cabecera{
     background-color: black;
     color: white;
@@ -49,18 +76,15 @@ a {
     display: inline;
     width: 50px;
     text-decoration: none;
-    color: white;
-    align-items: center;
+    color: blanchedalmond;
 }
 nav, scroll-container {
-    text-align: center;
     font-size: 5em;
 }
 nav {
     position: absolute;
-    width: 339px;
     top: 0px;
-    left: 515px;
+    right: 415px;
 }
 scroll-container {
     display: block;
@@ -93,6 +117,7 @@ scroll-page {
     width: 1146px;
 }
 h1 {
+    font-family: italic;
     font-size: 30px;
 }
 p {
@@ -103,11 +128,19 @@ footer {
     background-color: black;
     color: blanchedalmond;
     height: 60px;
-    margin: 0;
+}
+
+.foot {
+    position: absolute;
+    top: 625;
+    right: 40px;
+    font-size: 18px;
 }
 
 .Contact {
-    left: 10px;
+    top: 606px;
+    right: 150px;
+    position: absolute;
     height: 40px;
     width: 40px;
 }
