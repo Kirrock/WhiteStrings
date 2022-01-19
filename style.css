@@ -207,6 +207,12 @@ scroll-page .ecriv a {
 }
 
 @media (max-width: 360px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
     .menu-btn {
         right: 170px;
     }
@@ -229,5 +235,13 @@ scroll-page .ecriv a {
     scroll-page .ecriv h4 {
         font-size: 14px;
         padding-bottom: 20px;
+    }
+
+    scroll-page .ecriv p {
+        font-size: 11px;
+    }
+
+    scroll-page {
+        padding: 0;
     }
 }
