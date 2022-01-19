@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+/*------------------- BTN --------------------*/
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 29px;
+    right: 240px;
+    font-size: 1.3rem;
+    display: none;
+}
+
 /*------------------ LOGOS -------------------*/
 .logo {
     height: 60px;
@@ -16,7 +26,7 @@
     width: 35px;
     position: absolute;
     top: 20px;
-    right: 150px;
+    right: 170px;
 }
 
 .fblogo {
@@ -24,7 +34,7 @@
     width: 50px;
     position: absolute;
     top: 12px;
-    right: 93px;
+    right: 115px;
 }
 
 .inslogo {
@@ -32,18 +42,19 @@
     width: 40px;
     position: absolute;
     top: 23px;
-    right: 52px;
+    right: 80px;
 }
 /*------------------- NAV --------------------*/
 body {
-    background: #000;
-    color: #fff;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: #d9d9d9;
 }
 
 a {
-    color: #fff;
+    color: #d9d9d9;
     text-decoration: none;
-    font-size: 100px;
+    font-size: 10px;
 }
 
 ul {
@@ -112,12 +123,24 @@ scroll-page .ecriv h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
     font-family: 'Neonderthaw', cursive;
+    color: #d9d9d9;
+}
+
+scroll-page .ecriv h4 {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: 'Lobster';
+    color: #d9d9d9;
 }
 
 scroll-page a {
     font-size: 20px;
+    color: #d9d9d9;
 }
 
 scroll-page .ecriv a {
@@ -129,4 +152,56 @@ scroll-page .ecriv a {
 
 .wame {
     height: 40px;
+}
+
+@media (max-width: 700px) {
+    .top .dots {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 91%;
+        height: 20px;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .top .dots.show {
+        transform: translateX(0px);
+    }
+
+    .top .dots li {
+        padding: 0 30px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    scroll-page .ecriv h2{
+        font-size: 30px;
+        display: flex;
+        padding-left: 10%;
+        justify-content: center;
+    }
+
+    scroll-page .ecriv h4 {
+        font-size: 15px;
+    }
+
+    scroll-page video {
+        width: 380px;
+    }
+
+    .ytlogo {
+        right: 115px;
+    }
+
+    .fblogo {
+        right: 65px;
+    }
+
+    .inslogo {
+        right: 30px;
+    }
 }
